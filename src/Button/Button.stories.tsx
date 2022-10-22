@@ -22,11 +22,13 @@ export default {
 // //   // primary: true,
 // //   children: 'Button',
 // // };
-
+const handleClick = () => {
+  alert(1)
+}
 export const Basic = () => {
   return (
     <>
-    <Button type="primary" style={{marginRight: '12px'}}>Primary Button</Button>
+    <Button type="primary" style={{marginRight: '12px'}} onClick={handleClick}>Primary Button</Button>
     <Button style={{marginRight: '12px'}}>Default Button</Button>
     <Button type="dashed">Dashed Button</Button>
     <br />

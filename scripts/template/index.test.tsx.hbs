@@ -1,0 +1,12 @@
+import React from 'react';
+import { render, screen, fireEvent } from '@testing-library/react';
+import {{componentName}} from './index';
+
+describe('{{componentName}}', () => {
+  test('renders {{componentName}}', () => {
+    render(<{{componentName}}>click me</{{componentName}}>);
+    const linkElement = screen.getByText(/click me/i);
+    expect(linkElement).toBeInTheDocument();
+  });
+});
+
